@@ -75,7 +75,14 @@ function next_binary_number(arr){
         }
     }
 
-    if(one == arr.length){ //checking length of no. of 1 and array size. If true then adding 0 at end. Ex. if it is 1,1,1,1 then result will be 1,1,1,1,0
+    if(one == arr.length){ //checking length of no. of 1 and array size. If true then adding 0 at end. Ex. if it is 1,1,1,1 then result will be 1,0,0,0,0
+        for(var i=0;i<arr.length;i++){
+            if(i==0){
+                arr[i] = '1';
+            } else {
+                arr[i] = '0';
+            }
+        }
         arr.push("0");
     }
 
