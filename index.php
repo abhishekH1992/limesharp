@@ -22,6 +22,8 @@
                         include('task2.html');
                     } else if($_GET['task'] == 3){
                         include('task3.html');
+                    } else {
+                        include('main.html');
                     }
                 } else {
                     include('main.html');
