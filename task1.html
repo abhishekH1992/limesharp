@@ -1,0 +1,21 @@
+<ul class="list-group">
+    <li class="list-group-item">
+        <h4>Task 1</h4>
+        <small>Repeat 3 times the contents of an array</small>
+    </li>
+</ul>
+<div class="task">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="usr">Please insert some value:<small>Only accept number and ,.</small></label>
+                <input type="text" class="form-control" onkeypress="inputChecker(event, ',0-9')" onpaste="return false;" id="task1" value="1,2,3">
+                <button class="btn btn-success task1 mt-2">Check << </button>
+            </div>
+        </div>
+        <div class="col-6">
+            <p>Please check console result as well.</p>
+            <div class="result1"></div>
+        </div>
+    </div>
+</div>
