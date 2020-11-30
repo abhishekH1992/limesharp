@@ -56,7 +56,7 @@ function reformat(str){
 function next_binary_number(arr){
     var one = 1;
     //Converting string to array and removing empty values
-    arr = trimEmpty(arr.split(""));//console.log(arr);
+    arr = trimEmpty(arr.split(""));
     for(var i=arr.length-1;i>0;i--){
         //checking last position and breaking loop if true
         if(i == arr.length - 1 && arr[i] == 0){
@@ -64,18 +64,11 @@ function next_binary_number(arr){
             break;
         } else if(arr[i] == 0){ //checking if iteration is having 0 and breaking loop if true
             arr[i] = "1";
-            console.log('i'+i);
             var j = i + 1;
             while(j<arr.length){
                 arr[j] = "0";
                 j++;
             }
-            // for(var j=i+1;j>0;j--){
-            //     // console.log(j);
-            //     console.log('j'+j);
-            //     // console.log(arr.length);
-            //     arr[j] = "0";
-            // }
             break;
         } else { //if 1 then counting it
             one = one + 1;
